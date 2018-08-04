@@ -1,0 +1,302 @@
+/*-----------------------------
+            HTML SETUP
+-------------------------------*/
+
+:root {
+    background: #746a6a
+    font-size: 16px;
+   font-family: "Montserrat", serif;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+/*-----------------------------
+            HEADER IMAGE
+-------------------------------*/
+h1{
+text-align: center;
+}
+
+.banner .card {
+    background: url('showcase.jpg') no-repeat 0 -400px;
+    width:100%;
+    height: 80vh;
+    border: 1px solid #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner .card .heading {
+    color: rgb(198, 201, 244);
+    font-family: "Montserrat", serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 12vh;
+    padding: 5vw;
+}
+
+.banner .card .sub-heading {
+    color: #ffffff;
+    font-family: "Montserrat", serif;
+    font-size: 2.4rem;
+    letter-spacing:12px;
+    margin: 0;
+    padding: 0 5vw 2vw;
+}
+.banner .card .sub-heading button:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 20px 0 #35eea4;
+}
+span{
+color: #e68524;
+    font-weight: 600;
+    font-size:2.5rem;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5vh;
+}
+.section-heading{
+    color:#e68524;
+    font-weight:600;
+    text-align: center;
+    margin-top: 4%;
+    border-top: 1px solid #e66161;
+    font-size: 1.5rem;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    background-color: #403737;
+    padding: 1.5%;
+    
+}
+
+/*-----------------------------
+            ABOUT ME
+-------------------------------*/
+.row .my-image {
+ 
+    width: 15vw;
+    border-radius: 50%;
+    margin-right:2vw;
+}
+
+
+.para-personal-info {
+    color: #2c2c2c;
+    margin-left: 1vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 3vw 6vw 5vw 0;
+    text-align: justify;
+    line-height: 1.5;
+    word-spacing: 5px;
+    
+}
+.personal-info{
+    background: rgba(186, 186, 186, 0.34);
+}
+
+/*-----------------------------
+            TECHNOLOGIES
+-------------------------------*/
+
+.box{
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    box-shadow: 1px 1px 15px #888888;
+}
+.para-technologies{
+    font-weight: 500;
+    color: #2c2c2c;
+    font-family: "Montserrat", sans-serif; 
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+/*-----------------------------
+            PROJECTS
+-------------------------------*/
+.image-project-1{
+    height: 40vh;
+   
+}
+/*-----------------------------
+            FOOTER 
+-------------------------------*/
+.icon-group {
+    margin-top: 2vh;
+}
+
+.icon-group .icon {
+    margin-right: 10px;
+    width: 25px;
+}
+footer{
+    max-height:800px;
+    height: 100px;
+    background-color: #7c7c7c;
+}
+.icon-group{
+    padding: 5.5vh;
+}
+/*-----------------------------
+           MEDIA QUERIES
+-------------------------------*/
+@media screen and (max-width: 359px)
+    {
+        .row{
+        flex-direction: column;
+    }
+        .row-1{
+            flex-direction: column;
+            
+        }
+        
+    .row .image {
+        order: -1;
+    }
+
+    .row .my-image {
+        width: 20vw;
+    }
+        .para-personal-info{
+        text-align: center;
+        }
+        .image-project-1{
+        width:40vw;
+        height: 40vh;
+        }
+         .banner .card .heading {
+    color: rgb(181, 188, 206);
+    font-family: "Montserrat", serif;
+
+    
+    }
+        .banner .card .sub-heading {
+    color: #ffffff;
+    font-family: "Montserrat", serif;
+
+}
+    
+    
+    }
+
+@media screen and (min-width: 360px) and (max-width: 479px)
+    {
+      .row {
+        flex-direction: column;
+    }
+        .row-1{
+            flex-direction: column;
+            
+        }
+        .image-project-1{
+        width:80vw;
+        height: 40vh;
+        }
+       
+    }
+    .row .image{
+        order: -1;
+    }
+    .row .my-image {
+        width: 60vw;
+    }
+        .para-personal-info{
+        text-align: center;
+        }
+        .image-project-1{
+        width:80vw;
+        height: 40vh;
+        }
+        .banner .card .heading {
+    color: rgb(181, 188, 206);
+    font-family: "Montserrat", serif;
+    font-size: 3rem;
+    font-weight: 400;
+    
+    }
+        .banner .card .sub-heading {
+    color: #ffffff;
+    font-family: "Montserrat", serif;
+    font-size: 2rem;
+    letter-spacing:12px;
+    margin: 0;
+    padding: 0 5vw 2vw;
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px)
+    {
+        .row{
+        flex-direction: column;
+    }
+        .row-1{
+            flex-direction: column;
+            
+        }
+        
+    .row .image {
+        order: -1;
+    }
+
+    .row .my-image {
+        width: 30vw;
+    }
+        .para-personal-info{
+        text-align: center;
+        }
+        .image-project-1{
+        width:80vw;
+        height: 40vh;
+        }
+    
+    
+    }
+
+
+@media screen and (min-width: 800px)
+    {
+        .row{
+        flex-direction: row;
+    }
+        .row-1{
+            flex-direction: column;
+            
+        }
+        
+    .row .image {
+        order: 1;
+    }
+
+    .row .my-image {
+        width: 20vw;
+    }
+        .para-personal-info{
+        text-align: center;
+        }
+        .image-project-1{
+        width:40vw;
+        height: 40vh;
+        }
+    
+    
+    }
